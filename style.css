@@ -1,0 +1,132 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar-brand img {
+  border-radius: 5px;
+}
+
+#hero {
+  background: linear-gradient(90deg, #e3f2fd, #f9f9f9);
+}
+
+#hero h1 {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 25px;
+  font-weight: bold;
+}
+#about h2 {
+  font-weight: bold;
+  direction: rtl;     
+  text-align: right;
+}
+
+
+#about .card {
+  border-radius: 12px;
+  background-color: #ffffff;
+   direction: rtl;     
+  text-align: right;
+
+}
+
+#about h3 {
+  margin-top: 20px;
+  direction: rtl;     
+  text-align: right;
+}
+#services .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+#services .card:hover {
+  transform: scale(1.05);
+}
+
+#services h5 {
+  font-weight: bold;
+}#training .card {
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+#training ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+#advantage .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+#advantage .card:hover {
+  transform: scale(1.05);
+}
+
+#advantage h5 {
+  font-weight: bold;
+}
+/* قسم التواصل */
+#contact {
+  background-color: #f9f9f9;   /* خلفية فاتحة */
+  border-radius: 12px;
+  padding: 30px;
+}
+
+#contact h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* قائمة الأرقام */
+#contact ul {
+  padding: 0;
+  margin: 15px 0;
+}
+
+#contact ul li {
+  list-style: none;
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* يخلي الرقم والزر في خط واحد */
+  gap: 10px;
+}
+
+/* الروابط داخل الأرقام */
+#contact ul li a {
+  text-decoration: none;
+  color: #0d6efd; /* أزرق */
+  font-weight: bold;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* الأزرار */
+#contact .btn {
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 6px 14px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#contact .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
