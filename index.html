@@ -1,60 +1,147 @@
 
-<!DOCTYPE html>
-<html lang="ar">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Scope Consultant</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لاب سكوب كونسلتنت — Lab Scope Consultant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet"href="assets/css/styles.css">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <img src="assets/images/logo.png" alt="Lab Scope Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="services.html">خدماتنا</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>لاب سكوب كونسلتنت</h1>
-        <p>ربع قرن من الريادة في صياغة معايير الثقة المختبرية.</p>
-        <p>نستند إلى إرث معرفي يمتد لأكثر من 25 عاماً في قطاع التحاليل المرجعية، لنجمع بين الخبرة الاستشارية وأحدث نظم الأتمتة والتحول الرقمي.</p>
-        <a href="contact.html" class="btn">تواصل معنا</a>
+<body class="site-bg-water">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg header-with-logo">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo-square.svg" alt="لاب سكوب كونسلتنت" class="me-2 logo-img" loading="lazy" onerror="this.style.display='none'">
+        <img src="assets/images/logo-icon.svg" alt="LSC" class="me-2 logo-icon-small d-none" loading="lazy" onerror="this.style.display='none'">
+        <span class="logo-fallback">لاب سكوب كونسلتنت</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل / طلب خدمة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">عن الشركة</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-6">لاب سكوب كونسلتنت.. ربع قرن من الريادة في صياغة معايير الثقة المختبرية.</h1>
+      <p class="lead mt-3">نستند إلى إرثٍ معرفي يمتد لأكثر من 25 عاماً في قطاع التحاليل المرجعية، لنجمع بين الخبرة الاستشارية العميقة وأحدث نظم الأتمتة والتحول الرقمي.</p>
+      <p class="mb-3 fst-italic">"لاب سكوب كونسلتنت: ربع قرن من الدقة.. لمستقبلٍ تقني بلا حدود."</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">اطلب استشارة أو تحليل</a>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- About -->
+    <section id="about" class="about-no-image py-5">
+      <div class="container">
+        <h2 class="mb-3 text-center">من نحن</h2>
+        <div class="about-content mx-auto" style="max-width:900px;">
+          <p>تُعد شركة <strong>لاب سكوب كونسلتنت للاستشارات العلمية</strong> بيت خبرة رائد يتخصص في تقديم الحلول المتكاملة للمنظومات المختبرية (الطبية، الصناعية، البيئية، والبحثية). نتميز بقدرتنا الفريدة على الدمج بين طرق التحليل المرجعية وتكنولوجيا المعلومات المتقدمة.</p>
+          <p>نصمم نماذج نجاح تشغيلية استناداً إلى سجل حافل في إدارة ومراجعة المعامل المعتمدة دولياً، لا سيما في التحاليل النوعية المعقدة مثل كشف المنشطات والسموم ومتبقيات المبيدات.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Services Preview -->
-    <section class="services-preview">
-        <h2>خدماتنا</h2>
-        <div class="services-cards">
-            <div class="card">
-                <h3>تطوير البحث العلمي</h3>
-                <p>دعم الشركات في استحداث وتطوير بروتوكولات إنتاج المواد التشخيصية.</p>
+    <!-- Services preview -->
+    <section class="mb-5">
+      <h3 class="mb-4">خدماتنا الاستراتيجية</h3>
+
+      <section class="service-section service-bg-consulting text-white">
+        <div class="overlay">
+          <div class="container py-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h4>الاستشارات العلمية والتقنية</h4>
+                <p>تطوير البحث العلمي، إدارة الأزمات التقنية، واستشارات قطاعية متخصصة (صحي، زراعي، بيئي، صناعي).</p>
+                <a href="contact.html" class="btn btn-light">اطلب هذه الخدمة</a>
+              </div>
+              <div class="col-lg-4 text-center d-none d-lg-block">
+                <img src="assets/images/consolting-thumb.png" alt="استشارات" class="img-fluid rounded shadow-sm" loading="lazy">
+              </div>
             </div>
-            <div class="card">
-                <h3>إدارة الأزمات التقنية</h3>
-                <p>تقديم حلول جذرية للمشكلات التشغيلية المعقدة.</p>
-            </div>
-            <div class="card">
-                <h3>التحول الرقمي</h3>
-                <p>دمج أحدث نظم الأتمتة وتحسين الكفاءة التشغيلية.</p>
-            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="service-section service-bg-engineering text-white">
+        <div class="overlay">
+          <div class="container py-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h4>هندسة وتأهيل المختبرات</h4>
+                <p>تصميم البنية التحتية، التأهيل للاعتماد الدولي، والتشغيل والإشراف الفني.</p>
+                <a href="contact.html" class="btn btn-light">اطلب هذه الخدمة</a>
+              </div>
+              <div class="col-lg-4 text-center d-none d-lg-block">
+                <img src="assets/images/lab2-thumb.png" alt="هندسة مختبرات" class="img-fluid rounded shadow-sm" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-section service-bg-digital text-white">
+        <div class="overlay">
+          <div class="container py-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h4>التحول الرقمي وحلول LIMS</h4>
+                <p>نظم إدارة المعلومات المختبرية، الربط الشبكي اللحظي، وخرائط تفاعلية لمراقبة مؤشرات الجودة.</p>
+                <a href="contact.html" class="btn btn-light">اطلب هذه الخدمة</a>
+              </div>
+              <div class="col-lg-4 text-center d-none d-lg-block">
+                <img src="assets/images/lab1-thumb.png" alt="تحول رقمي" class="img-fluid rounded shadow-sm" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center mt-3">
+        <a href="services.html" class="btn btn-outline-primary">عرض كل الخدمات</a>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>📞 هاتف: +20 123 456 7890 | ✉️ بريد إلكتروني: info@labscope.com</p>
-        <p>&copy; 2026 Lab Scope Consultant</p>
-    </footer>
+    <!-- Competitive advantages -->
+    <section class="mb-5">
+      <h3>لماذا لاب سكوب كونسلتنت</h3>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item"><strong>إرث من الخبرة:</strong> 25 عاماً من الممارسة الميدانية.</li>
+        <li class="list-group-item"><strong>الريادة الرقمية:</strong> حلول ربط وتحليل لحظي للبيانات.</li>
+        <li class="list-group-item"><strong>الكفاءة الاقتصادية:</strong> استراتيجيات تشغيلية تقلل الفاقد وتزيد الدقة.</li>
+        <li class="list-group-item"><strong>شريك ابتكار:</strong> توطين التكنولوجيا وتطوير منتجات تشخيصية.</li>
+      </ul>
+    </section>
+  </main>
 
-    <script src="assets/js/script.js"></script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>
+        <strong>لاب سكوب كونسلتنت — Lab Scope Consultant</strong><br>
+        <small>العنوان: القاهرة - مدينة نصر - 3 مكرم عبيد - مكتب G2 - الدور السادس · رمز بريدي: 11765</small>
+      </div>
+      <div class="text-md-end">
+        <small>الهاتف: 01034512508 · 01034512516 · 01027163232 · 0222741637</small><br>
+        <small>البريد: labscope2020@gmail.com</small><br>
+        <small>© <span id="year"></span> لاب سكوب كونسلتنت. جميع الحقوق محفوظة.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
