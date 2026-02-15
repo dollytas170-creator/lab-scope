@@ -1,114 +1,60 @@
 
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabScope Consultant</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Main CSS -->
+    <title>Lab Scope Consultant</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="assets/images/logo.png" alt="Lab Scope Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header class="header">
-    <div class="container nav-container">
-        <h1 class="logo">LabScope Consultant</h1>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>لاب سكوب كونسلتنت</h1>
+        <p>ربع قرن من الريادة في صياغة معايير الثقة المختبرية.</p>
+        <p>نستند إلى إرث معرفي يمتد لأكثر من 25 عاماً في قطاع التحاليل المرجعية، لنجمع بين الخبرة الاستشارية وأحدث نظم الأتمتة والتحول الرقمي.</p>
+        <a href="contact.html" class="btn">تواصل معنا</a>
+    </section>
 
-        <nav class="nav">
-            <a href="#home">الرئيسية</a>
-            <a href="#services">الخدمات</a>
-            <a href="#about">عن الشركة</a>
-            <a href="#contact">تواصل</a>
-        </nav>
-
-        <button id="langToggle" class="lang-btn">EN</button>
-    </div>
-</header>
-
-<section id="home" class="hero">
-    <div class="container">
-        <h2 class="hero-title ar">ربع قرن من الخبرة في تطوير وإدارة المختبرات الطبية</h2>
-        <h2 class="hero-title en hidden">A Quarter Century of Excellence in Laboratory Development & Management</h2>
-
-        <p class="hero-text ar">
-            نقدم حلولاً استشارية متقدمة لإدارة المعامل الطبية والتحول الرقمي وتحسين الجودة التشغيلية.
-        </p>
-
-        <p class="hero-text en hidden">
-            We deliver advanced scientific consulting, laboratory management, and digital transformation solutions.
-        </p>
-
-        <a href="#contact" class="btn">اطلب استشارة</a>
-    </div>
-</section>
-
-<section id="services" class="section">
-    <div class="container">
-        <h3 class="section-title">خدماتنا</h3>
-
-        <div class="services-grid">
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <h2>خدماتنا</h2>
+        <div class="services-cards">
             <div class="card">
-                <h4>إدارة وتشغيل المعامل</h4>
-                <p>رفع كفاءة الأداء وتحقيق أعلى معايير الجودة التشغيلية.</p>
+                <h3>تطوير البحث العلمي</h3>
+                <p>دعم الشركات في استحداث وتطوير بروتوكولات إنتاج المواد التشخيصية.</p>
             </div>
-
             <div class="card">
-                <h4>التحول الرقمي</h4>
-                <p>تصميم أنظمة رقمية متكاملة لإدارة المختبرات.</p>
+                <h3>إدارة الأزمات التقنية</h3>
+                <p>تقديم حلول جذرية للمشكلات التشغيلية المعقدة.</p>
             </div>
-
             <div class="card">
-                <h4>البحث والتطوير</h4>
-                <p>دعم تطوير المنتجات التشخيصية وحلول الابتكار العلمي.</p>
-            </div>
-
-            <div class="card">
-                <h4>إدارة الأزمات التقنية</h4>
-                <p>حلول استراتيجية للمشكلات التشغيلية المعقدة.</p>
+                <h3>التحول الرقمي</h3>
+                <p>دمج أحدث نظم الأتمتة وتحسين الكفاءة التشغيلية.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="about" class="section light">
-    <div class="container">
-        <h3 class="section-title">عن الشركة</h3>
-        <p>
-            LabScope Consultant شركة متخصصة في تقديم حلول استشارية متقدمة للمعامل والمستشفيات وشركات التوريد الطبي، 
-            مع رؤية مستقبلية لإطلاق منصة توريد متخصصة تربط الموردين بالمؤسسات الصحية.
-        </p>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer>
+        <p>📞 هاتف: +20 123 456 7890 | ✉️ بريد إلكتروني: info@labscope.com</p>
+        <p>&copy; 2026 Lab Scope Consultant</p>
+    </footer>
 
-<section class="platform">
-    <div class="container">
-        <h3>منصة التوريد الطبية – قريبًا</h3>
-        <p>
-            نعمل حاليًا على إطلاق منصة B2B متخصصة في أجهزة ومستلزمات التحاليل الطبية.
-        </p>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <div class="container">
-        <h3 class="section-title">تواصل معنا</h3>
-        <p>info@labscope.com</p>
-        <p>+20 000 000 0000</p>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container">
-        © 2026 LabScope Consultant - All Rights Reserved
-    </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
