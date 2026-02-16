@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تواصل معنا — Lab Scope Consultant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* تخصيص حقول الإدخال */
+    .contact-card form .form-control {
+      border: 2px solid #0d6efd;   /* إطار أزرق */
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    .contact-card form .form-control:focus {
+      outline: none;
+      border-color: #084298;       /* أزرق أغمق */
+      box-shadow: 0 0 6px rgba(13,110,253,0.4);
+    }
+    .input-group-text {
+      background-color: #0d6efd;
+      color: #fff;
+      border: 2px solid #0d6efd;
+    }
+    /* إطار خاص لمعلومات العنوان والبريد */
+    .info-box {
+      border: 2px solid #0d6efd;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+
+<body class="site-bg-water">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg header-with-logo">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.png" alt="لاب سكوب كونسلتنت" class="me-2 logo-img" loading="lazy">
+        <span class="logo-fallback">لاب سكوب كونسلتنت</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل / طلب خدمة</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <main class="container py-5">
+    <h2 class="text-center mb-4">تواصل معنا</h2>
+
+    <!-- صف فيه صندوقين جنب بعض -->
+    <div class="row g-4">
+      <!-- صندوق الفورم -->
+      <div class="col-md-6">
+        <div class="contact-card p-4 shadow-sm rounded h-100">
+          <h3 class="mb-3">أرسل رسالة</h3>
+          <form action="mailto:labscope2020@gmail.com" method="post" enctype="text/plain">
+            <!-- الاسم -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text">👤</span>
+              <input type="text" id="name" name="name" class="form-control" placeholder="اكتب اسمك هنا" required>
+            </div>
+            <!-- البريد الإلكتروني -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text">✉️</span>
+              <input type="email" id="email" name="email" class="form-control" placeholder="اكتب بريدك الإلكتروني" required>
+            </div>
+            <!-- الخدمة المطلوبة -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text">⚙️</span>
+              <select id="service" name="service" class="form-control" required>
+                <option value="">اختر الخدمة المطلوبة</option>
+                <option value="استشارة قانونية">استشارة قانونية</option>
+                <option value="تحليل مخبري">تحليل مخبري</option>
+                <option value="تدريب">تدريب</option>
+                <option value="خدمة أخرى">خدمة أخرى</option>
+              </select>
+            </div>
+            <!-- تفاصيل الطلب -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text">📝</span>
+              <input type="text" id="details" name="details" class="form-control" placeholder="اكتب تفاصيل الطلب" required>
+            </div>
+            <!-- الرسالة -->
+            <div class="mb-3">
+              <label for="message" class="form-label">الرسالة</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-primary w-50">إرسال</button>
+              <button type="reset" class="btn btn-secondary w-50">تفريغ الحقول</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- صندوق معلومات الاتصال -->
+      <div class="col-md-6">
+        <div class="contact-card p-4 shadow-sm rounded h-100">
+          <h3 class="mb-3">معلومات الاتصال</h3>
+          <ul class="phone-list">
+            <li><span class="phone-icon">📞</span> 01034512508</li>
+            <li><span class="phone-icon">📞</span> 01034512516</li>
+            <li><span class="phone-icon">📞</span> 01027163232</li>
+            <li><span class="phone-icon">☎️</span> 0222741637</li>
+          </ul>
+          <!-- إطار خاص للعنوان والبريد -->
+          <div class="info-box mt-3">
+            <p><strong>البريد الإلكتروني:</strong> labscope2020@gmail.com</p>
+            <p><strong>العنوان:</strong> القاهرة - مدينة نصر - 3 مكرم عبيد - مكتب G2 - الدور السادس</p>
+            <p><strong>الرمز البريدي:</strong> 11765</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- صندوق الخريطة -->
+    <div class="contact-card p-4 shadow-sm rounded mt-4">
+      <h3 class="mb-3">موقعنا على الخريطة</h3>
+      <div class="map-responsive">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=YOUR_EXACT_MAP_LINK" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>
+        <strong>لاب سكوب كونسلتنت — Lab Scope Consultant</strong><br>
+        <small>© <span id="year"></span> جميع الحقوق محفوظة.</small>
+      </div>
+      <div class="text-md-end">
+        <small>الهاتف: 01034512508 · 01034512516 · 01027163232 · 0222741637</small><br>
+        <small>البريد: labscope2020@gmail.com</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
