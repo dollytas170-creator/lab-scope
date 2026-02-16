@@ -42,6 +42,13 @@ body{
 }
 
 /* Header / Navbar */
+.hero-logo {
+  max-width: 200px;   /* حجم مناسب */
+  height: auto;
+  display: block;
+  margin: 0 auto;     /* يخليها في النص */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6)); /* وضوح أكتر */
+}
 .header-with-logo {
   background: transparent !important;
   padding: 0.6rem 0;
@@ -245,4 +252,5 @@ footer small{ opacity:0.9; }
 @media (max-width: 767px) {
   .phones-row { flex-direction:column; align-items:flex-start; gap:8px; }
   .phone-box { width:100%; justify-content:space-between; }
+
 }
