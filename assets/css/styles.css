@@ -102,8 +102,23 @@ section h2 {
 
 /* زر الدعوة للعمل */
 .btn-primary {
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: #0d6efd;             /* خلفية الزر */
+  --bs-btn-border-color: #0d6efd;   /* لون الحدود */
+  --bs-btn-hover-bg: #0b5ed7;       /* لون الخلفية عند المرور */
+  --bs-btn-hover-border-color: #0b5ed7;
+  --bs-btn-active-bg: #0a58ca;      /* لون الخلفية عند الضغط */
+  --bs-btn-active-border-color: #0a58ca;
+  --bs-btn-color: #fff;             /* لون النص */
+  
+  position: relative;
+  z-index: 9999;                    /* يخلي الزر فوق أي طبقة */
+  pointer-events: auto;             /* يتأكد أنه قابل للنقر */
+}
+
+/* تحسين الوصول */
+.btn-primary:focus {
+  outline: 3px solid rgba(13,110,253,0.4);
+  outline-offset: 2px;
 }
 
 /* إظهار أيقونة الشعار على الشاشات الصغيرة */
