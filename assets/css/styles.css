@@ -1,5 +1,5 @@
 :root{
-  --primary:#0d6efd;
+  --primary:whitesmoke;
   --muted:#6c757d;
   --bg:#f8f9fa;
 }
@@ -8,7 +8,7 @@
 body{
   font-family: "Segoe UI", Tahoma, Arial, sans-serif;
   background:var(--bg);
-  color:#222;
+  color:whitesmoke;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -51,14 +51,14 @@ body{
 
 /* شعار */
 .logo-img {
-  width: 160px;
-  height: auto;
+  width:66px;
+  height: 66px;
   display: inline-block;
   object-fit: contain;
 }
 .logo-icon-small {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   display: inline-block;
   object-fit: contain;
 }
@@ -78,7 +78,7 @@ section {
   border-radius: 10px;
   background-color: #ffffffcc;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  text-align: center;color: #201394;
+  text-align: center;color: rgb(25, 34, 170);
 }
 
 /* تحسين العناوين داخل الأقسام */
@@ -189,7 +189,8 @@ section h2 {
 }
 
 /* نصوص */
-h1,h2,h3{ color:#0b5ed7; }
+h1{color: #fff;}
+h2,h3{ color:rgb(62, 53, 196); }
 footer small{ opacity:0.9; }
 
 /* About */
@@ -201,7 +202,7 @@ footer small{ opacity:0.9; }
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: #333;
+  color: whitesmoke;
 }
 @media (max-width: 767px){
   .about-no-image .about-content{ padding: 0 12px; }
@@ -216,7 +217,7 @@ footer small{ opacity:0.9; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; text-shadow: #070707;
+  color:whitesmoke; text-shadow: #161b6b;
   font-size: large;
   margin-bottom: 24px;
   border-radius: 8px;
