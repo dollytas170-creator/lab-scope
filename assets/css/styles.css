@@ -216,7 +216,8 @@ footer small{ opacity:0.9; }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
+  color: white; text-shadow: #070707;
+  font-size: large;
   margin-bottom: 24px;
   border-radius: 8px;
   overflow: hidden;
